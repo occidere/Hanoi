@@ -10,11 +10,9 @@ public class Hanoi {
 		height = sc.nextInt();
 		int left = 1, mid = 2, right = 3; //왼쪽, 가운데, 오른쪽 기둥 번호
 		
-		initStack(leftTower, height);
-		
-		printAllTower();
-		
-		hanoi(height, left, mid, right);
+		initStack(leftTower, height); //처음 시작 시 왼쪽에 다 채움
+		printAllTower(); //탑 상태 출력
+		hanoi(height, left, mid, right); //하노이 시작
 		
 		sc.close();
 	}
